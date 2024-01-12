@@ -19,8 +19,17 @@ import SignUp from '../components/SignUp.astro'
 </div>
 
 <dialog>
-    <SignUp />
+    <!-- <SignUp /> -->
+    <div class="ml-embedded" data-form="pbu5Pf"></div>
 </dialog>
+
+<style>
+    dialog::backdrop {
+    background-color: #242424;
+    opacity: 0.5;
+
+    }
+</style>
     
 <script>
     const dialog = document.querySelector("dialog");
@@ -29,5 +38,17 @@ import SignUp from '../components/SignUp.astro'
     document.getElementById("action").addEventListener("click", () => {
         dialog.showModal();
     });
+
+    dialog.addEventListener("click", e => {
+        const dialogDimensions = dialog.getBoundingClientRect()
+        if (
+            e.clientX < dialogDimensions.left ||
+            e.clientX > dialogDimensions.right ||
+            e.clientY < dialogDimensions.top ||
+            e.clientY > dialogDimensions.bottom
+        ) {
+            dialog.close()
+        }
+        })
 
 </script> 
