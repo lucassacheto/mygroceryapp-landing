@@ -1,0 +1,107 @@
+[debug] [2024-01-12T04:00:32.382Z] ----------------------------------------------------------------------
+[debug] [2024-01-12T04:00:32.383Z] Command:       /usr/local/bin/node /Users/lucassacheto/Dev/lab/mygroceryapp-landing/node_modules/.bin/firebase init hosting
+[debug] [2024-01-12T04:00:32.383Z] CLI Version:   13.0.3
+[debug] [2024-01-12T04:00:32.383Z] Platform:      darwin
+[debug] [2024-01-12T04:00:32.384Z] Node Version:  v20.10.0
+[debug] [2024-01-12T04:00:32.384Z] Time:          Thu Jan 11 2024 23:00:32 GMT-0500 (Eastern Standard Time)
+[debug] [2024-01-12T04:00:32.384Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-12T04:00:32.386Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-12T04:00:32.386Z] > authorizing via signed-in user (lcsacheto@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/lucassacheto/Dev/lab/mygroceryapp-landing
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-01-12T04:01:10.833Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-01-12T04:01:10.834Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"mygroceryapp-landing","name":"mygroceryapp-landing"}
+[debug] [2024-01-12T04:01:11.272Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-01-12T04:01:11.272Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.6384251817332025963"}
+[debug] [2024-01-12T04:01:11.273Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6384251817332025963 [none]
+[debug] [2024-01-12T04:01:11.768Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6384251817332025963 200
+[debug] [2024-01-12T04:01:11.769Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6384251817332025963 {"name":"operations/cp.6384251817332025963"}
+[debug] [2024-01-12T04:01:12.271Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-01-12T04:01:12.272Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6384251817332025963 [none]
+[debug] [2024-01-12T04:01:12.676Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6384251817332025963 200
+[debug] [2024-01-12T04:01:12.676Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6384251817332025963 {"name":"operations/cp.6384251817332025963"}
+[debug] [2024-01-12T04:01:13.678Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-01-12T04:01:13.678Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6384251817332025963 [none]
+[debug] [2024-01-12T04:01:14.150Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6384251817332025963 200
+[debug] [2024-01-12T04:01:14.150Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6384251817332025963 {"name":"operations/cp.6384251817332025963","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2024-01-12T04:01:16.152Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-01-12T04:01:16.153Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6384251817332025963 [none]
+[debug] [2024-01-12T04:01:16.503Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6384251817332025963 200
+[debug] [2024-01-12T04:01:16.503Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6384251817332025963 {"name":"operations/cp.6384251817332025963","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"743268717208","projectId":"mygroceryapp-landing","lifecycleState":"ACTIVE","name":"mygroceryapp-landing","createTime":"2024-01-12T04:01:13.253612Z"}}
+[debug] [2024-01-12T04:01:16.505Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/mygroceryapp-landing:addFirebase [none]
+[debug] [2024-01-12T04:01:18.959Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/mygroceryapp-landing:addFirebase 200
+[debug] [2024-01-12T04:01:18.959Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/mygroceryapp-landing:addFirebase {"name":"operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi"}
+[debug] [2024-01-12T04:01:18.960Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi [none]
+[debug] [2024-01-12T04:01:19.376Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi 200
+[debug] [2024-01-12T04:01:19.376Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi {"name":"operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi"}
+[debug] [2024-01-12T04:01:19.877Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-01-12T04:01:19.879Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi [none]
+[debug] [2024-01-12T04:01:20.278Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi 200
+[debug] [2024-01-12T04:01:20.278Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi {"name":"operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi"}
+[debug] [2024-01-12T04:01:21.280Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-01-12T04:01:21.282Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi [none]
+[debug] [2024-01-12T04:01:21.610Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi 200
+[debug] [2024-01-12T04:01:21.610Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi {"name":"operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi"}
+[debug] [2024-01-12T04:01:23.612Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-01-12T04:01:23.613Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi [none]
+[debug] [2024-01-12T04:01:23.975Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi 200
+[debug] [2024-01-12T04:01:23.975Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi {"name":"operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi"}
+[debug] [2024-01-12T04:01:27.976Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-01-12T04:01:27.978Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi [none]
+[debug] [2024-01-12T04:01:28.374Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi 200
+[debug] [2024-01-12T04:01:28.374Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi {"name":"operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi"}
+[debug] [2024-01-12T04:01:36.376Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-01-12T04:01:36.376Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi [none]
+[debug] [2024-01-12T04:01:36.792Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi 200
+[debug] [2024-01-12T04:01:36.792Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi {"name":"operations/workflows/ODllY2QxZTEtOGY5NS00ODRkLTgzYTYtYzEwNDVkMTg3YzFi","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"mygroceryapp-landing","projectNumber":"743268717208","displayName":"mygroceryapp-landing","name":"projects/mygroceryapp-landing","resources":{"hostingSite":"mygroceryapp-landing"}}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
+[info] 
+[info] Project information:
+[info]    - Project ID: mygroceryapp-landing
+[info]    - Project Name: mygroceryapp-landing
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/mygroceryapp-landing/overview
+[info] i  Using project mygroceryapp-landing (mygroceryapp-landing) 
+[info] 
+=== Hosting Setup
+[debug] [2024-01-12T04:01:36.806Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mygroceryapp-landing [none]
+[debug] [2024-01-12T04:01:37.302Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mygroceryapp-landing 200
+[debug] [2024-01-12T04:01:37.302Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mygroceryapp-landing {"projectId":"mygroceryapp-landing","projectNumber":"743268717208","displayName":"mygroceryapp-landing","name":"projects/mygroceryapp-landing","resources":{"hostingSite":"mygroceryapp-landing"},"state":"ACTIVE","etag":"1_34881f13-b8e5-45e6-9ffe-2fa284cc44cd"}
+[info] 
+[info] i  Detected a .git folder at /Users/lucassacheto/Dev/lab/mygroceryapp-landing 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=499435361&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-01-12T04:02:10.924Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-01-12T04:02:10.924Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-01-12T04:02:11.139Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-01-12T04:02:11.140Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-01-12T04:02:11.150Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-01-12T04:02:11.400Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-01-12T04:02:11.400Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"lucassacheto","id":12189408,"node_id":"MDQ6VXNlcjEyMTg5NDA4","avatar_url":"https://avatars.githubusercontent.com/u/12189408?v=4","gravatar_id":"","url":"https://api.github.com/users/lucassacheto","html_url":"https://github.com/lucassacheto","followers_url":"https://api.github.com/users/lucassacheto/followers","following_url":"https://api.github.com/users/lucassacheto/following{/other_user}","gists_url":"https://api.github.com/users/lucassacheto/gists{/gist_id}","starred_url":"https://api.github.com/users/lucassacheto/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/lucassacheto/subscriptions","organizations_url":"https://api.github.com/users/lucassacheto/orgs","repos_url":"https://api.github.com/users/lucassacheto/repos","events_url":"https://api.github.com/users/lucassacheto/events{/privacy}","received_events_url":"https://api.github.com/users/lucassacheto/received_events","type":"User","site_admin":false,"name":"Lucas Sacheto","company":null,"blog":"","location":"Toronto, Ontario, Canada","email":"lcsacheto@gmail.com","hireable":true,"bio":"Front End Developer \r\n","twitter_username":null,"public_repos":14,"public_gists":1,"followers":8,"following":5,"created_at":"2015-04-30T17:45:28Z","updated_at":"2023-12-11T19:42:36Z","private_gists":0,"total_private_repos":4,"owned_private_repos":4,"disk_usage":81460,"collaborators":0,"two_factor_authentication":true,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as lucassacheto 
+[info] 

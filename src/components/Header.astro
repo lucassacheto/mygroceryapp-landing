@@ -1,0 +1,47 @@
+---
+---
+<header class="top-0 z-50 max-w-[1280px] xl:px-0 lg:px-4 m-auto ">
+    <nav class="flex md:items-start items-center p-6 lg:px-8" aria-label="Global">
+        <div class="flex flex-1">
+            <a href="/" class="-m-1.5 p-1.5">
+                <span class="sr-only">My Grocery App</span>
+                <img class="h-8 w-auto" src="/mygroceryapp.png" alt="">
+            </a>
+        </div>
+        <div class="flex md:hidden">
+            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Open main menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+      <!-- absolute z-20 md:relative md:block hidden top-20 md:top-auto bg-MGA-purple md:bg-transparent md:w-auto w-[200px] h-[200px] md:h-auto -->
+      <div class="absolute hidden md:block md:relative bg-MGA-purple md:bg-transparent z-10 md:opacity-100 opacity-80 md:pl-0 md:pr-0 md:py-0 md:mt-0 pl-20 pr-7 py-10 mt-60" id="menu-items">
+            <div class="md:flex-row md:text-auto text-right flex flex-col gap-x-12">
+                <a href="#about" class="text-xl mb-4 font-semibold leading-6 text-white md:normal-case uppercase">About</a>
+                <a href="#how-it-works" class="text-xl mb-4 font-semibold leading-6 text-white md:normal-case uppercase">Features</a>
+                <a href="#contact" class="text-xl mb-4 font-semibold leading-6 text-white md:normal-case uppercase">Contact</a>
+            </div>
+        </div>
+    </nav>
+  </header>
+  <style>
+    #menu-items {
+        animation-name: slide;
+        animation-duration: 300ms;
+        animation-timing-function: ease-in-out;
+        right: 0;
+    }
+    @keyframes slide {
+        0% {
+            right: -200px;
+        }
+        100% {
+            right: 0;
+        }
+    }
+    
+  </style>
+
+
