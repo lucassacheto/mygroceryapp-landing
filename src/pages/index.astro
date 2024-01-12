@@ -45,6 +45,7 @@ import Header from '../components/Header.astro';
     const button = document.querySelector('button')
     const menu = document.getElementById('menu-items')
 	const backBtn = document.getElementById('back-btn')
+
     button.addEventListener('click', () => {
       menu.classList.toggle('hidden')
     })
@@ -58,11 +59,25 @@ import Header from '../components/Header.astro';
 	function scrollFunction() {
 		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
 			backBtn.style.display = "block";
-		// menu.classList.toggle('hidden')
+			
+			menu.classList.remove('block')
+			
 		} else {
 			backBtn.style.display = "none";
+			menu.classList.add('hidden')
 		}
 	}
+
+	menu.addEventListener('click', (e) => {
+		e.stopPropagation()
+	})
+	button.addEventListener('click', (e) => {
+		e.stopPropagation()
+	})
+	
+	window.addEventListener('click', () => {
+		menu.classList.add('hidden')
+	})
 
 </script>
 
