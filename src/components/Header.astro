@@ -1,11 +1,13 @@
 ---
+import { Image } from 'astro:assets';
+import MGALogo from '@assets/mygroceryapp.png';
 ---
 <header class="top-0 z-50 max-w-[1280px] xl:px-0 lg:px-4 m-auto ">
     <nav class="flex md:items-start items-center p-6 lg:px-8" aria-label="Global">
         <div class="flex flex-1">
             <a href="/" class="-m-1.5 p-1.5">
                 <span class="sr-only">My Grocery App</span>
-                <img class="h-8 w-auto" src="/mygroceryapp.png" alt="">
+                <Image class="h-8 w-auto" src={MGALogo} alt="My Grocery App" />
             </a>
         </div>
         <div class="flex md:hidden">
