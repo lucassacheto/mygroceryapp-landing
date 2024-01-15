@@ -1,4 +1,5 @@
 ---
+import ContactForm from '../components/ContactForm.astro'
 ---
 <!-- CONTACT TITLE -->
 <div id="contact" class="flex w-11/12 m-auto justify-center gap-x-20 mt-20">
@@ -12,7 +13,32 @@
 <div class="flex w-11/12 m-auto justify-center gap-x-20">
     <div class="hero-title self-center">
         <p class="font-semibold text-white xl:text-2xl lg:text-xl">
-            <a href="mailto:support@mygroceryapp.ca">support@mygroceryapp.ca</a>
+            <span id="contact-form">click here or support@mygroceryapp.ca</span>
         </p>
     </div>
 </div>
+
+<dialog class="contact">
+<ContactForm />
+</dialog>
+
+<script>
+    const dialog = document.querySelector("dialog.contact");
+
+// "Show the dialog" button opens the dialog modally
+document.getElementById("contact-form").addEventListener("click", () => {
+    dialog.showModal();
+});
+
+dialog.addEventListener("click", e => {
+    const dialogDimensions = dialog.getBoundingClientRect()
+    if (
+        e.clientX < dialogDimensions.left ||
+        e.clientX > dialogDimensions.right ||
+        e.clientY < dialogDimensions.top ||
+        e.clientY > dialogDimensions.bottom
+    ) {
+        dialog.close()
+    }
+    })
+</script>

@@ -1,5 +1,8 @@
 ---
-
+import { Image } from 'astro:assets';
+import MakeYourListImg from '@assets/make-your-list.png';
+import YouIncontrolImg from '@assets/you-in-control.png';
+import SaveMoneyImg from '@assets/save-money.png';
 ---
 
 <!-- HOW IT WORKS TITLE -->
@@ -13,7 +16,7 @@
 <!-- MAKE YOU LIST SECTION -->
 <div class="flex flex-col md:flex-row w-11/12 m-auto justify-center gap-x-20">
 	<div class="lg:w-[400px] xl:w-auto">
-		<img src="/make-your-list.png" class="w-[200px] m-auto" alt="">
+		<Image src={MakeYourListImg} class="w-[200px] m-auto" alt="" />
 	</div>
 	<div class="self-center xl:max-w-[460px] max-w-[360px]">
 		<h2 class="text-MGA-purple text-center md:text-left font-semibold text-3xl xl:text-4xl uppercase">make your list</h2>
@@ -29,20 +32,25 @@
 		<p class="font-semibold text-center md:text-left text-white xl:text-4xl text-3xl">checkout the price while shopping to have an idea how much you are spending.</p>
 	</div>
 	<div class="lg:w-[400px] xl:w-auto">
-		<img src="/you-in-control.png" class="w-[250px] m-auto" alt="">
+		<Image 
+			src={YouIncontrolImg} 
+			decoding="async"
+  			loading="lazy"
+			class="w-[200px] m-auto" 
+			alt="You in Control" />
 	</div>
 </div>
 
 <!-- SAVE MONEY SECTION -->
 <div class="flex w-11/12 mt-20 flex-col md:flex-row m-auto justify-center gap-x-20">
 	<div class="lg:w-[400px] xl:w-auto">
-		<img src="/save-money.png" class="w-[250px] m-auto" alt="">
+		<Image src={SaveMoneyImg} class="w-[200px] m-auto" alt="" />
 	</div>
 	<div class="self-center xl:max-w-[460px] max-w-[360px]">
 		<h2 class="text-MGA-purple text-center md:text-left font-semibold text-3xl xl:text-4xl uppercase">save money</h2>
 		<p class="font-semibold text-center md:text-left text-white xl:text-4xl text-3xl">
 			never spend more than you need.
 			<br /><br />
-			never get surprised at the end of the grocery shop</p>
+			never get surprised at the end of shopping</p>
 	</div>
 </div>
