@@ -4,41 +4,9 @@ import ContactForm from '../components/ContactForm.astro'
 <!-- CONTACT TITLE -->
 <div id="contact" class="flex w-11/12 m-auto justify-center gap-x-20 mt-20">
     <div class="how-it-works-title p-4 rounded-lg self-center xl:max-w-[460px] lg:max-w-[360px] mb-2">
-        <span class="text-white font-semibold text-3xl uppercase">Contact</span>
+        <span class="text-white font-semibold text-3xl uppercase">Contact Us</span>
     </div>
 </div>
 <div class="bg-gradient-to-r mb-20 w-40 m-auto opacity-50 from-indigo-500 via-purple-500 to-pink-500 h-[1px]"></div>
 
-<!-- CONTACT SECTION -->
-<div class="flex w-11/12 m-auto justify-center gap-x-20">
-    <div class="hero-title self-center">
-        <p class="font-semibold text-white xl:text-2xl lg:text-xl">
-            <span id="contact-form">click here or support@mygroceryapp.ca</span>
-        </p>
-    </div>
-</div>
-
-<dialog class="contact">
 <ContactForm />
-</dialog>
-
-<script>
-    const dialog = document.querySelector("dialog.contact");
-
-// "Show the dialog" button opens the dialog modally
-document.getElementById("contact-form").addEventListener("click", () => {
-    dialog.showModal();
-});
-
-dialog.addEventListener("click", e => {
-    const dialogDimensions = dialog.getBoundingClientRect()
-    if (
-        e.clientX < dialogDimensions.left ||
-        e.clientX > dialogDimensions.right ||
-        e.clientY < dialogDimensions.top ||
-        e.clientY > dialogDimensions.bottom
-    ) {
-        dialog.close()
-    }
-    })
-</script>

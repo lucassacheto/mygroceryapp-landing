@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "mygroceryapp-landing"
-  }
+  },
+  "targets": {
+    "mygroceryapp-landing": {
+      "hosting": {
+        "mygroceryapp-landing": [
+          "1:743268717208:web:cc21418ff2f394cf1ff6ed"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
