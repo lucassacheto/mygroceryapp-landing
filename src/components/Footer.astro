@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import MGALogo from '@assets/mygroceryapp.png';
+---
+<footer class="top-0 z-50 mt-40 w-full xl:px-0 lg:px-4 m-auto ">
+    <div class="flex m-auto justify-center">
+        <a href="/" class="-m-1.5 p-1.5">
+            <span class="sr-only">My Grocery App</span>
+            <Image class="h-8 w-auto" src={MGALogo} alt="My Grocery App" />
+        </a>
+    </div>
+</footer>
+
+<style>
+footer a{
+    z-index: 10;
+}
+</style>

@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import BackgroundBlurToRight from '../components/BackgroundBlurToRight.astro';
+import BackgroundBlurToLeft from '../components/BackgroundBlurToLeft.astro';
+import { Image } from 'astro:assets';
+import MGALogo from '@assets/mygroceryapp.png';
+
+---
+<Layout title="My Grocery App">
+
+	<div class="bg-dark" id="mygroceryapp">
+		
+		<Header />
+	  
+		<div class="relative mt-10">
+			<BackgroundBlurToRight />
+			
+			<!-- THANK YOU -->
+			<div id="contact" class="flex w-11/12 m-auto justify-center gap-x-20 mt-20">
+				<div class="how-it-works-title p-4 rounded-lg self-center xl:max-w-[460px] lg:max-w-[360px] mb-2">
+					<span class="text-white font-semibold text-3xl uppercase">thank you</span>
+				</div>
+			</div>
+			
+			<div class="bg-gradient-to-r mb-20 w-40 m-auto opacity-50 from-indigo-500 via-purple-500 to-pink-500 h-[1px]"></div>
+
+			<!-- ABOUT SECTION -->
+			<div class="flex w-11/12 m-auto justify-center gap-x-20">
+				<div class="hero-title self-center">
+					<p class="text-white xl:text-2xl lg:text-xl text-center max-w-[760px]">
+						We will let you know once everything is set. 
+						<br /><br />
+						It might take a few weeks. We are trying to add more people as fast as we can.
+						<br /><br />
+						Currently, the web app is in beta; being available for mobile in the future. <a href="/#roadmap" class="underline">Check our roadmap</a> for more details.
+						<br /><br />
+						Say goodbye to complexity!
+						<br /><br />
+						<a href="http://mygroceryapp.ca" class="text-sm md:text-xl bg-MGA-purple text-black rounded-full text-white md:px-10 px-5 md:px-6 lg:px-10 py-3 mr-5">Go to the Website</a>
+						
+					</p>
+				</div>
+			</div>
+			
+			
+
+			<BackgroundBlurToLeft />
+		</div>
+
+	</div>
+	
+	<footer class="top-0 z-50 mt-40 w-full xl:px-0 lg:px-4 m-auto ">
+		<div class="flex m-auto justify-center">
+			<a href="#" class="-m-1.5 p-1.5">
+				<span class="sr-only">My Grocery App</span>
+				<Image class="h-8 w-auto" src={MGALogo} alt="My Grocery App" />
+			</a>
+		</div>
+	</footer>
+	
+	</div>
+	  
+</Layout>
