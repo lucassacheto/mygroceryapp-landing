@@ -1,16 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Image } from 'astro:assets';
 import HowItWorks from '@components/HowItWorks.astro';
 import Hero from '@components/Hero.astro';
 import BackgroundBlurToRight from '@components/BackgroundBlurToRight.astro';
 import BackgroundBlurToLeft from '@components/BackgroundBlurToLeft.astro';
 import About from '@components/About.astro';
 import Contact from '@components/Contact.astro';
-import Backbutton from '@components/Backbutton.astro';
+import Backbutton from '@components/BackButton.astro';
 import Header from '@components/Header.astro';
 import Roadmap from '@components/Roadmap.astro';
-import MGALogo from '@assets/mygroceryapp.png';
+import Footer from '@components/Footer.astro';
 ---
 <Layout title="My Grocery App">
 
@@ -30,14 +29,7 @@ import MGALogo from '@assets/mygroceryapp.png';
 
 	</div>
 	
-	<footer class="top-0 z-50 mt-40 w-full xl:px-0 lg:px-4 m-auto ">
-		<div class="flex m-auto justify-center">
-			<a href="#" class="-m-1.5 p-1.5">
-				<span class="sr-only">My Grocery App</span>
-				<Image class="h-8 w-auto" src={MGALogo} alt="My Grocery App" />
-			</a>
-		</div>
-	</footer>
+	<Footer />
 	
 	<Backbutton />
 	
