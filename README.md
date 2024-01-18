@@ -1,8 +1,6 @@
 # My Grocery App - Landing Page
 
-```sh
-npm create astro@latest -- --template basics
-```
+[Web Site](http://mygroceryapp.ca)
 
 ## Project Structure
 
