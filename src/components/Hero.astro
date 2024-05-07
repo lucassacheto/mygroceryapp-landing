@@ -6,14 +6,14 @@ import HeroImg from '@assets/hero.png';
     <!-- HERO -->
     <div class="flex w-11/12 m-auto flex-col-reverse md:flex-row justify-center gap-x-20 md:gap-x-0 lg:gap-x-20">
         <div class="hero-title self-center xl:max-w-[460px] max-w-[370px] md:max-w-[450px] z-10">
-            <h1 class="text-MGA-purple text-center md:text-left font-semibold text-3xl md:text-4xl lg:text-5xl uppercase backdrop-blur-sm drop-shadow-sm md:backdrop-none-sm md:drop-shadow-none">my grocery app</h1>
+            <h1 class="text-MGA-purple text-center md:text-left font-semibold text-3xl md:text-4xl lg:text-5xl uppercase drop-shadow-sm md:drop-shadow-none mt-4">my grocery app</h1>
             <p class="font-semibold text-center md:text-left md:text-4xl lg:text-5xl text-3xl">simplify your grocery list.</p>
-            <div class="flex mt-20">
-                <button id="action" class="bg-MGA-purple text-white rounded-full px-10 md:px-6 lg:px-10 py-3 mr-5">notify me</button>
-                <a href="#how-it-works" class="bg-transparent border-2 border-white rounded-full px-10 md:px-6 lg:px-10 py-3">learn more</a>
+            <div class="flex mt-10">
+                <button id="action" class="bg-MGA-purple text-white text-sm md:text-sm rounded-full px-10 md:px-6 lg:px-10 py-3 mr-5 uppercase font-bold">notify me</button>
+                <a href="#how-it-works" class="bg-transparent border-2 border-white rounded-full px-10 md:px-6 lg:px-10 py-3 uppercase text-xs">learn more</a>
             </div>
         </div>
-        <div class="hero-img m-auto w-8/12 md:w-6/12 lg:w-8/12 min-w-[370px] -mb-20 sm:mb-0 md:w-auto">
+        <div class="hero-img m-auto w-8/12 md:w-6/12 lg:w-8/12 min-w-[320px] sm:mb-0 md:w-auto">
             <Image src={HeroImg} alt="Cellphone with grocery elements in the background" />
         </div>
     </div>
@@ -28,7 +28,6 @@ import HeroImg from '@assets/hero.png';
     dialog::backdrop {
     background-color: #242424;
     opacity: 0.5;
-
     }
 </style>
     
